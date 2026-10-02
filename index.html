@@ -1,0 +1,1883 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compre Legal - Hub Completo de Vendas e Pagamentos. Estruturamos seu negócio digital do zero: site, tráfego pago, WhatsApp e processamento de vendas.">
+    <meta name="keywords" content="compre legal, hub de vendas, intermediação de vendas, pagamento online, estruturação e-commerce, tráfego pago, marketing digital, whatsapp business, vendas online">
+    <meta name="author" content="Compre Legal">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://comprelegal.com.br/">
+    <meta property="og:title" content="Compre Legal | Hub de Vendas e Pagamentos 360º">
+    <meta property="og:description" content="Do site à venda realizada. Estruturamos seu negócio digital completo. Site, tráfego, WhatsApp e pagamento em um só lugar.">
+    <meta property="og:image" content="https://comprelegal.com.br/og-image.jpg">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://comprelegal.com.br/">
+    <meta property="twitter:title" content="Compre Legal | Hub de Vendas e Pagamentos 360º">
+    <meta property="twitter:description" content="Do site à venda realizada. Estruturamos seu negócio digital completo.">
+    <meta property="twitter:image" content="https://comprelegal.com.br/twitter-image.jpg">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://comprelegal.com.br/">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <title>Compre Legal | Hub de Vendas e Pagamentos 360º - Do Site à Venda Realizada</title>
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-blue: #1e3a8a;
+            --primary-green: #22c55e;
+            --primary-red: #ef4444;
+            --primary-yellow: #eab308;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --gradient-primary: linear-gradient(135deg, var(--primary-blue) 0%, #3b82f6 100%);
+            --gradient-success: linear-gradient(135deg, var(--primary-green) 0%, #16a34a 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+
+        header.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .logo img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: contain;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+
+        .logo-text .compre {
+            color: var(--primary-green);
+            font-style: italic;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .logo-text .legal {
+            color: var(--primary-blue);
+            font-size: 1.2rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-green);
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-blue);
+        }
+
+        .btn-whatsapp-nav {
+            background: var(--primary-green);
+            color: white !important;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-whatsapp-nav::after {
+            display: none !important;
+        }
+
+        .btn-whatsapp-nav:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(34, 197, 94, 0.3);
+        }
+
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--dark);
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            background: var(--gradient-primary);
+            color: white;
+            padding: 6rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 800px;
+            height: 800px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            animation: float 20s infinite ease-in-out;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 600px;
+            height: 600px;
+            background: rgba(234, 179, 8, 0.1);
+            border-radius: 50%;
+            animation: float 25s infinite ease-in-out reverse;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(30px, -30px) rotate(120deg); }
+            66% { transform: translate(-20px, 20px) rotate(240deg); }
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 span {
+            color: var(--primary-yellow);
+            display: block;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--primary-green);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(34, 197, 94, 0.4);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--primary-blue);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-tertiary {
+            background: transparent;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            border: 2px solid white;
+            transition: all 0.3s;
+        }
+
+        .btn-tertiary:hover {
+            background: white;
+            color: var(--primary-blue);
+        }
+
+        .hero-image {
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
+            animation: float-image 6s infinite ease-in-out;
+        }
+
+        @keyframes float-image {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-stat-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem 1.5rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-stat-item strong {
+            display: block;
+            font-size: 1.8rem;
+            color: var(--primary-yellow);
+        }
+
+        .hero-stat-item span {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Stats Section */
+        .stats {
+            background: white;
+            padding: 4rem 0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            font-weight: 800;
+        }
+
+        .stat-item p {
+            color: var(--gray);
+            font-weight: 500;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 6rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .section-title p {
+            font-size: 1.2rem;
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .section-title .highlight {
+            color: var(--primary-green);
+        }
+
+        /* About Section */
+        .about {
+            background: var(--light);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-content h3 {
+            font-size: 2rem;
+            color: var(--primary-blue);
+            margin-bottom: 1.5rem;
+        }
+
+        .about-content p {
+            margin-bottom: 1.5rem;
+            color: var(--gray);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .about-features {
+            display: grid;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .about-feature {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .about-feature i {
+            color: var(--primary-green);
+            font-size: 1.3rem;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Services Section */
+        .services {
+            background: white;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-success);
+            transform: scaleX(0);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            border-color: var(--primary-blue);
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            color: var(--gray);
+            line-height: 1.8;
+        }
+
+        /* B2B Section - PACOTE 360 */
+        .b2b-section {
+            background: var(--gradient-primary);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .b2b-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .b2b-section .section-title h2 {
+            color: white;
+        }
+
+        .b2b-section .section-title p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .b2b-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .b2b-content h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .b2b-content p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            line-height: 1.8;
+        }
+
+        .b2b-features {
+            display: grid;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .b2b-feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .b2b-feature h4 {
+            color: var(--primary-yellow);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .b2b-feature p {
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        .b2b-pricing {
+            background: white;
+            color: var(--dark);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .b2b-pricing-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--light);
+        }
+
+        .b2b-pricing-header h3 {
+            color: var(--primary-blue);
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .b2b-pricing-header .price {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary-green);
+        }
+
+        .b2b-pricing-header .price span {
+            font-size: 1rem;
+            color: var(--gray);
+            display: block;
+        }
+
+        .b2b-pricing-list {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .b2b-pricing-list li {
+            padding: 0.75rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .b2b-pricing-list li i {
+            color: var(--primary-green);
+        }
+
+        /* How It Works */
+        .how-it-works {
+            background: var(--light);
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .step {
+            text-align: center;
+            position: relative;
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .step:not(:last-child)::after {
+            content: '→';
+            position: absolute;
+            right: -1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            color: var(--primary-yellow);
+            font-weight: 800;
+        }
+
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-success);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 800;
+            margin: 0 auto 1.5rem;
+            box-shadow: 0 10px 20px rgba(34, 197, 94, 0.3);
+        }
+
+        .step h3 {
+            font-size: 1.3rem;
+            color: var(--primary-blue);
+            margin-bottom: 0.75rem;
+        }
+
+        .step p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Partners Section */
+        .partners {
+            background: white;
+        }
+
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .partner-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .partner-card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            border-color: var(--primary-blue);
+        }
+
+        .partner-logo {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-success);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .partner-info h3 {
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .partner-info p {
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            background: var(--light);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+        }
+
+        .benefit-item {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .benefit-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-success);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .benefit-content h3 {
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .benefit-content p {
+            color: var(--gray);
+            line-height: 1.7;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background: white;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: var(--light);
+            padding: 2rem;
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            font-size: 4rem;
+            color: var(--primary-yellow);
+            opacity: 0.3;
+            position: absolute;
+            top: -10px;
+            left: 20px;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: var(--gray);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .testimonial-author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .testimonial-author-info strong {
+            color: var(--primary-blue);
+            display: block;
+        }
+
+        .testimonial-author-info span {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        .stars {
+            color: var(--primary-yellow);
+            margin-bottom: 1rem;
+        }
+
+        /* CTA Section */
+        .cta {
+            background: var(--gradient-success);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta h2 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+        }
+
+        .cta p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-white {
+            background: white;
+            color: var(--primary-green);
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            transition: all 0.3s;
+            font-size: 1.1rem;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-white:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-outline-white {
+            background: transparent;
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            border: 3px solid white;
+            transition: all 0.3s;
+            font-size: 1.1rem;
+        }
+
+        .btn-outline-white:hover {
+            background: white;
+            color: var(--primary-green);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-brand .logo {
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-brand .logo img {
+            background: white;
+            padding: 5px;
+        }
+
+        .footer-brand p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-links a {
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.3rem;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background: var(--primary-green);
+            transform: translateY(-3px);
+        }
+
+        .footer-column h3 {
+            color: var(--primary-yellow);
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-column ul li a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-column ul li a:hover {
+            color: var(--primary-green);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25d366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+            cursor: pointer;
+            z-index: 999;
+            transition: all 0.3s;
+            text-decoration: none;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 40px rgba(37, 211, 102, 0.5);
+            animation: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .hero-content,
+            .about-grid,
+            .b2b-grid,
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .services-grid,
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .step:not(:last-child)::after {
+                display: none;
+            }
+
+            .partners-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .b2b-pricing {
+                order: -1;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .steps {
+                grid-template-columns: 1fr;
+            }
+
+            .cta h2 {
+                font-size: 2rem;
+            }
+
+            .hero-buttons,
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn-primary,
+            .btn-secondary,
+            .btn-tertiary,
+            .btn-white,
+            .btn-outline-white {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <nav class="container">
+            <div class="logo">
+                <!-- SUBSTITUA: logo-compre-legal.png pela sua imagem real -->
+                <img src="logo-compre-legal.png" alt="Compre Legal Logo">
+                <div class="logo-text">
+                    <span class="compre">Compre</span>
+                    <span class="legal">LEGAL</span>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#pacote360">Pacote 360º</a></li>
+                <li><a href="#parceiros">Parceiros</a></li>
+                <li><a href="https://wa.me/5573999999999" class="btn-whatsapp-nav" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    Fale Conosco
+                </a></li>
+            </ul>
+            <div class="mobile-menu" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-star"></i> Hub Completo de Vendas e Pagamentos
+                    </div>
+                    <h1>Do Site à <span>Venda Realizada</span></h1>
+                    <p>Estruturamos seu negócio digital completo: site otimizado, tráfego pago, WhatsApp Business e processamento de vendas. Tudo em um só lugar para você vender mais e melhor.</p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/5573999999999" class="btn-primary" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Quero Estruturar Meu Negócio
+                        </a>
+                        <a href="#pacote360" class="btn-tertiary">
+                            <i class="fas fa-play-circle"></i>
+                            Conheça o Pacote 360º
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat-item">
+                            <strong>1000+</strong>
+                            <span>Vendas Realizadas</span>
+                        </div>
+                        <div class="hero-stat-item">
+                            <strong>98%</strong>
+                            <span>Clientes Satisfeitos</span>
+                        </div>
+                        <div class="hero-stat-item">
+                            <strong>24h</strong>
+                            <span>Atendimento Rápido</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <!-- SUBSTITUA: hero-image.png por uma imagem real -->
+                    <img src="hero-image.png" alt="Compre Legal - Estruturação Completa de Negócios Digitais">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>1000+</h3>
+                    <p>Vendas Realizadas</p>
+                </div>
+                <div class="stat-item">
+                    <h3>98%</h3>
+                    <p>Clientes Satisfeitos</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24h</h3>
+                    <p>Atendimento Rápido</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Pagamento Seguro</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="sobre">
+        <div class="container">
+            <div class="section-title">
+                <h2>O Que é a <span class="highlight">Compre Legal</span>?</h2>
+                <p>Conheça o hub que está revolucionando a forma de comprar, vender e estruturar negócios digitais</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>Mais que um Pagamento, uma Solução Completa</h3>
+                    <p>A <strong>Compre Legal</strong> é o seu hub 360º de vendas e pagamentos. Nós não apenas processamos transações - nós construímos seu negócio digital do zero e vendemos por você.</p>
+                    <p>Seja para clientes finais que querem comprar com segurança, ou para empreendedores que precisam estruturar suas operações online, temos a solução completa.</p>
+                    
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Criamos seu site com SEO avançado</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Configuramos tráfego pago (Meta e Google)</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Atendemos e vendemos via WhatsApp</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Processamos pagamentos com segurança</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Fazemos remarketing e recaptura de clientes</span>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <a href="https://wa.me/5573999999999" class="btn-primary" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Fale com um Consultor
+                        </a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <!-- SUBSTITUA: about-image.png por uma imagem real -->
+                    <img src="about-image.png" alt="Equipe Compre Legal">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicos">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossos <span class="highlight">Serviços</span></h2>
+                <p>Soluções completas para clientes e empresas</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Para Clientes</h3>
+                    <p>Atendimento humanizado via WhatsApp, tiramos dúvidas, mostramos produtos e fechamos sua compra com as melhores condições de pagamento.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Para Lojistas</h3>
+                    <p>Intermediação de vendas para sua loja. Nossa equipe vende por você enquanto você foca na produção e entrega.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Pacote 360º</h3>
+                    <p>Estruturação completa do seu negócio digital: site, redes sociais, tráfego pago, WhatsApp e processamento de vendas.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Pagamento Seguro</h3>
+                    <p>PIX, boleto, cartão de crédito (até 12x). Processamento seguro com criptografia e confirmação automática.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Tráfego Pago</h3>
+                    <p>Configuração e gestão de campanhas no Facebook, Instagram e Google. Remarketing para recapturar clientes.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>SEO Avançado</h3>
+                    <p>Sites otimizados para aparecer no Google. Mais visibilidade orgânica e menos dependência de anúncios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- B2B Section - PACOTE 360 -->
+    <section class="b2b-section" id="pacote360">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pacote Compre Legal <span style="color: var(--primary-yellow);">360º</span></h2>
+                <p>Estruturamos seu negócio digital completo - do zero às vendas</p>
+            </div>
+            <div class="b2b-grid">
+                <div class="b2b-content">
+                    <h3>Tudo que você precisa para vender online</h3>
+                    <p>Não tem site? Não tem redes sociais estruturadas? Não tem tráfego? Não tem problema. Nós montamos TUDO para você.</p>
+                    
+                    <div class="b2b-features">
+                        <div class="b2b-feature">
+                            <h4><i class="fas fa-laptop-code"></i> Site Profissional + SEO</h4>
+                            <p>Site moderno, responsivo e otimizado para Google. Pronto para receber visitantes e converter em vendas.</p>
+                        </div>
+                        <div class="b2b-feature">
+                            <h4><i class="fas fa-hashtag"></i> Instagram/Facebook Business</h4>
+                            <p>Perfis profissionais configurados, prontos para receber tráfego pago e engajar clientes.</p>
+                        </div>
+                        <div class="b2b-feature">
+                            <h4><i class="fas fa-ad"></i> Tráfego Pago Configurado</h4>
+                            <p>Pixel Meta, Tag Google, públicos personalizados, campanhas de conversão e remarketing ativos.</p>
+                        </div>
+                        <div class="b2b-feature">
+                            <h4><i class="fab fa-whatsapp"></i> WhatsApp Business + Intermediação</h4>
+                            <p>Nossa equipe atende, qualifica e vende para seus clientes via WhatsApp. Você não precisa se preocupar.</p>
+                        </div>
+                        <div class="b2b-feature">
+                            <h4><i class="fas fa-money-check-alt"></i> Processamento de Pagamento</h4>
+                            <p>Sistema completo de pagamento: PIX, boleto, cartão. Split automático e segurança total.</p>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/5573999999999?text=Olá!%20Quero%20conhecer%20o%20Pacote%20360º%20da%20Compre%20Legal" class="btn-white" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Quero o Pacote 360º
+                    </a>
+                </div>
+                <div class="b2b-pricing">
+                    <div class="b2b-pricing-header">
+                        <h3>Investimento</h3>
+                        <div class="price">
+                            R$ 3.500
+                            <span>Setup inicial (taxa única)</span>
+                        </div>
+                        <p style="color: var(--gray); margin-top: 1rem;">+ 8% sobre vendas realizadas</p>
+                    </div>
+                    <ul class="b2b-pricing-list">
+                        <li><i class="fas fa-check"></i> Site completo com SEO</li>
+                        <li><i class="fas fa-check"></i> Instagram/Facebook configurados</li>
+                        <li><i class="fas fa-check"></i> Tráfego pago (Meta + Google)</li>
+                        <li><i class="fas fa-check"></i> Pixel e Tag instalados</li>
+                        <li><i class="fas fa-check"></i> WhatsApp Business configurado</li>
+                        <li><i class="fas fa-check"></i> Intermediação de vendas</li>
+                        <li><i class="fas fa-check"></i> Processamento de pagamento</li>
+                        <li><i class="fas fa-check"></i> Remarketing automático</li>
+                        <li><i class="fas fa-check"></i> Relatórios semanais</li>
+                        <li><i class="fas fa-check"></i> Suporte via WhatsApp</li>
+                    </ul>
+                    <a href="https://wa.me/5573999999999" class="btn-primary" style="width: 100%; justify-content: center;" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Começar Agora
+                    </a>
+                    <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem; color: var(--gray);">
+                        <i class="fas fa-shield-alt"></i> Garantia de 7 dias
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="como-funciona">
+        <div class="container">
+            <div class="section-title">
+                <h2>Como <span class="highlight">Funciona</span>?</h2>
+                <p>Implementação rápida e estruturada em 4 fases</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Fundação</h3>
+                    <p>Criamos seu site, identidade visual e redes sociais profissionais (Dias 1-7)</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Tráfego</h3>
+                    <p>Configuramos Meta Ads, Google Ads, pixels e públicos-alvo (Dias 8-14)</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Vendas</h3>
+                    <p>WhatsApp configurado e nossa equipe começa a vender por você (Dias 15-21)</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Escala</h3>
+                    <p>Remarketing, otimizações e escalonamento das vendas (Dias 22-30)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners" id="parceiros">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossas <span class="highlight">Lojas Parceiras</span></h2>
+                <p>Conectamos você às melhores oportunidades</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <i class="fas fa-cookie-bite"></i>
+                    </div>
+                    <div class="partner-info">
+                        <h3>Doce Raiz</h3>
+                        <p>Produtos artesanais e doces especiais feitos com amor e qualidade. Sabores que encantam!</p>
+                    </div>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <i class="fas fa-spray-can"></i>
+                    </div>
+                    <div class="partner-info">
+                        <h3>Perfumes Itabuna</h3>
+                        <p>As melhores fragrâncias nacionais e importadas. Perfumes originais com preços especiais.</p>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--light); border-radius: 20px;">
+                <h3 style="color: var(--primary-blue); margin-bottom: 1rem;">
+                    <i class="fas fa-store" style="color: var(--primary-green);"></i>
+                    Você é dono de um negócio?
+                </h3>
+                <p style="color: var(--gray); font-size: 1.1rem; margin-bottom: 1.5rem;">
+                    Junte-se à nossa rede de parceiros e venda mais com a estrutura da Compre Legal
+                </p>
+                <a href="https://wa.me/5573999999999?text=Olá!%20Quero%20ser%20parceiro%20da%20Compre%20Legal" class="btn-primary" target="_blank">
+                    <i class="fas fa-handshake"></i>
+                    Quero Ser Parceiro
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2>Por Que Escolher a <span class="highlight">Compre Legal</span>?</h2>
+                <p>Vantagens exclusivas para você</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Atendimento Humanizado</h3>
+                        <p>Não somos um robô. Nossa equipe real entende sua necessidade e encontra a melhor solução para você.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Transação Segura</h3>
+                        <p>Seu pagamento é processado com criptografia de ponta e total proteção de dados.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Condições Especiais</h3>
+                        <p>Negociamos diretamente para oferecer as melhores condições de pagamento e descontos exclusivos.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Rapidez e Agilidade</h3>
+                        <p>Atendimento rápido, aprovação de pagamento ágil e entrega no menor tempo possível.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Várias Opções de Pagamento</h3>
+                        <p>PIX, boleto bancário, cartão de crédito (até 12x), débito e outras formas de pagamento.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Garantia de Satisfação</h3>
+                        <p>Sua satisfação é nossa prioridade. Trabalhamos apenas com produtos e lojas de qualidade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>O Que Nossos <span class="highlight">Clientes</span> Dizem</h2>
+                <p>Depoimentos reais de quem já comprou ou vendeu com a Compre Legal</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"A Compre Legal estruturou minha loja do zero. Em 30 dias já estava vendendo! O atendimento via WhatsApp é incrível e os clientes adoram."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-author-info">
+                            <strong>Maria Silva</strong>
+                            <span>Doce Raiz - Proprietária</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Comprei um perfume e o atendimento foi perfeito. Tiraram todas as dúvidas, me deram opções de pagamento e chegou super rápido. Recomendo!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-author-info">
+                            <strong>João Santos</strong>
+                            <span>Cliente - Perfumes Itabuna</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"O Pacote 360º mudou meu negócio. Site profissional, tráfego configurado e ainda vendem por mim. Melhor investimento que fiz!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-author-info">
+                            <strong>Carlos Oliveira</strong>
+                            <span>Empreendedor - Pacote 360º</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contato">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Pronto para Vender Mais?</h2>
+                <p>Seja para comprar com segurança ou estruturar seu negócio digital completo, a Compre Legal está pronta para te ajudar.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/5573999999999" class="btn-white" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Chamar no WhatsApp
+                    </a>
+                    <a href="mailto:comprelegal2@gmail.com" class="btn-outline-white">
+                        <i class="fas fa-envelope"></i>
+                        Enviar E-mail
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="logo-compre-legal.png" alt="Compre Legal">
+                        <div class="logo-text">
+                            <span class="compre" style="color: var(--primary-green); font-style: italic;">Compre</span>
+                            <span class="legal" style="color: white;">LEGAL</span>
+                        </div>
+                    </div>
+                    <p>O hub completo de vendas e pagamentos. Do site à venda realizada, estruturamos seu negócio digital e vendemos por você.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/comprelegal" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/comprelegal" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/5573999999999" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:comprelegal2@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#pacote360">Pacote 360º</a></li>
+                        <li><a href="#parceiros">Parceiros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Serviços</h3>
+                    <ul>
+                        <li><a href="#">Intermediação de Vendas</a></li>
+                        <li><a href="#">Processamento de Pagamento</a></li>
+                        <li><a href="#">Atendimento via WhatsApp</a></li>
+                        <li><a href="#">Criação de Sites + SEO</a></li>
+                        <li><a href="#">Tráfego Pago (Meta/Google)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><i class="fab fa-whatsapp" style="margin-right: 0.5rem;"></i> (73) 99999-9999</li>
+                        <li><i class="fas fa-envelope" style="margin-right: 0.5rem;"></i> comprelegal2@gmail.com</li>
+                        <li><i class="fas fa-clock" style="margin-right: 0.5rem;"></i> Seg a Sex: 8h às 18h</li>
+                        <li><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i> Brasil</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Compre Legal. Todos os direitos reservados. | CNPJ: [SEU CNPJ]</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5573999999999" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Compre Legal",
+        "description": "Hub de Vendas e Pagamentos 360º - Estruturação completa de negócios digitais",
+        "url": "https://comprelegal.com.br",
+        "logo": "https://comprelegal.com.br/logo-compre-legal.png",
+        "email": "comprelegal2@gmail.com",
+        "telephone": "+55-73-99999-9999",
+        "sameAs": [
+            "https://facebook.com/comprelegal",
+            "https://instagram.com/comprelegal",
+            "https://wa.me/5573999999999"
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "BR"
+        },
+        "makesOffer": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Pacote Compre Legal 360º"
+                }
+            }
+        ]
+    }
+    </script>
+
+    <script>
+        // Header Scroll Effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+            
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '100%';
+                navLinks.style.left = '0';
+                navLinks.style.right = '0';
+                navLinks.style.background = 'white';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.padding = '2rem';
+                navLinks.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+                navLinks.style.gap = '1rem';
+            }
+        }
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in, .service-card, .partner-card, .benefit-item, .step, .testimonial-card').forEach(el => {
+            el.classList.add('fade-in');
+            observer.observe(el);
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                const navLinks = document.querySelector('.nav-links');
+                if (window.innerWidth <= 968) {
+                    navLinks.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
