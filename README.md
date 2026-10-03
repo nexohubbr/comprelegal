@@ -125,17 +125,14 @@ Para empreendedores que querem vender online, oferecemos:
 
 ### **Doce Raiz** 🍬
 Produtos artesanais e doces especiais feitos com amor e qualidade.
-- **Repositório:** [github.com/Lucianofs/doceraiz](https://github.com/Lucianofs/doceraiz)
-- **Site:** [doceraiz.com.br](https://Lucianofs.github.io/resort))
+- **Site:** [doceraiz.com.br](https://Lucianofs.github.io/doceraiz)
 
 ### **Perfumes Itabuna** 💎
 As melhores fragrâncias nacionais e importadas com preços especiais.
-- **Repositório:** [github.com/Lucianfs/perfumes-itabuna](https://Lucianofs.github.io/perfumes-itabuna
 - **Site:** [perfumes-itabuna.com.br](https://Lucianofs.github.io/perfumes-itabuna)
 
 ### **Resort & Hotel** 
 Experiências de hospedagem e turismo com conforto e qualidade.
-- **Repositório:** [github.com/Luciano fs/resort](https://github.com/Lucianofs/resort)
 - **Site:** [resort.com.br](https://Lucianofs.github.io/resort)
 - https://nexohubbr.github.io/comprelegal
 
@@ -273,8 +270,3 @@ Sábado: 9h às 13h
 *CNPJ: [Em breve]*
 
 </div>
-
-
-🚀 **Vamos lá?**
-//))))//////
-https://nexohubbr.github.io/comprelegal
