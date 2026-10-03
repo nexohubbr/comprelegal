@@ -134,7 +134,6 @@ As melhores fragrâncias nacionais e importadas com preços especiais.
 ### **Resort & Hotel** 
 Experiências de hospedagem e turismo com conforto e qualidade.
 - **Site:** [resort.com.br](https://Lucianofs.github.io/resort)
-- https://nexohubbr.github.io/comprelegal
 
 ---
 
